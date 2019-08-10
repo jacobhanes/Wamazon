@@ -1,0 +1,24 @@
+{
+  "name": "Wamazon",
+  "version": "1.0.0",
+  "description": "amazons worst enemy",
+  "main": "wamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobhanes/Wamazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobhanes/Wamazon/issues"
+  },
+  "homepage": "https://github.com/jacobhanes/Wamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.5.0",
+    "mysql": "^2.17.1"
+  }
+}

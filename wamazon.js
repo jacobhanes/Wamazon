@@ -39,18 +39,18 @@ function askQuestions() {
       let amount = parseInt(answer.amount);
       let ident = parseInt(answer.start);
       const query = connection.query("UPDATE products SET quantity = quantity - " + amount + " where ?", [
-
         {
           id: ident
         }
       ],
         function (err, res) {
-          if (err) throw err;
-          console.log(res + " products updated!\n");
+          if (err) 
+          
+          console.log("error try again");
 
+          askQuestions();
         })
       readProducts();
-      askQuestions();
     })
 }
 
@@ -58,7 +58,9 @@ function readProducts() {
   console.log("Selecting all products...\n");
   connection.query("SELECT * FROM products", function (err, res) {
     if (err) throw err;
-
+    if (res.quantity >= 0){
+      console.log("nope")
+    }
     console.log(res);
 
   });
